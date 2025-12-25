@@ -113,6 +113,50 @@ p { margin-bottom: 15px; color: var(--text-secondary); }
 
 footer { text-align: center; color: var(--text-secondary); font-size: 0.8rem; padding-bottom: 20px;}
 
+/* Seção de Tecnologias */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.tech-category h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.tech-item i {
+    color: var(--accent-color);
+}
+
+.tech-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+}
+
 @media (max-width: 480px) {
     .card-header { flex-direction: column; align-items: flex-start; }
     .tech-stack { flex-wrap: wrap; }
