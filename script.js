@@ -3,7 +3,7 @@ const themeIcon = document.getElementById("theme-icon");
 
 const languageToggle = document.getElementById("language-toggle");
 const languageFlag = document.getElementById("language-flag");
-
+const resumeLink = document.getElementById("resume-link")
 
 // ==========================================================
 // THEME
@@ -364,6 +364,10 @@ function applyLanguage(language) {
             ? "pt-BR"
             : "en";
 
+    resumeLink.href =
+    language === "pt"
+        ? "curriculo-pt.pdf"
+        : "resume-en.pdf";
 
     /*
      * The flag represents the language you can switch TO.
