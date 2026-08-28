@@ -1,208 +1,725 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Gabrielly | Engenharia de Software</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Sara Silva, Computer Engineering student and software developer working with full-stack development, AI and intelligent systems."
+    >
+
+    <title>Sara Silva | Software Developer</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 <body>
 
-    <div class="layout">
-        <header>
-            <div class="profile-header">
-                <div class="name-role">
-                    <h1>Sara Gabrielly</h1>
-                    <span>Engenharia da Computação | Desenvolvedora Web Fullstack</span>
+<div class="layout">
+
+    <header class="site-header">
+
+        <a href="#home" class="logo">
+            Sara Silva
+        </a>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#experience" data-i18n="navExperience">Experience</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                id="language-toggle"
+                class="language-toggle"
+                type="button"
+                aria-label="Change language"
+                title="Change language"
+            >
+                <span id="language-flag">🇧🇷</span>
+            </button>
+
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle theme"
+                title="Toggle theme"
+            >
+                <i id="theme-icon" class="fas fa-sun"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow" data-i18n="heroEyebrow">
+                    Computer Engineering · Software · AI
+                </p>
+
+                <h1>
+                    <span data-i18n="heroTitle" class="hero-main-title">
+                        Hi, I'm Sara.
+                    </span>
+
+                    <span data-i18n="heroSubtitle" class="hero-subtitle">
+                        I build software and explore intelligent systems.
+                    </span>
+                </h1>
+
+                <p class="hero-description" data-i18n="heroDescription">
+                    Computer Engineering student working across full-stack
+                    development, artificial intelligence, algorithms and
+                    real-world engineering problems.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="viewProjects">View Projects</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/Sgnsilv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/saransilv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
                 </div>
-                <button id="theme-toggle" aria-label="Alternar Tema">
-                    <i class="fas fa-sun"></i>
-                </button>
+
             </div>
-            
-            <nav>
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-            </nav>
-        </header>
 
-        <main>
-            <section id="sobre" class="intro-section">
-  <h2>Sobre mim</h2>
+        </section>
 
-  <p>
-    Sou estudante de <strong>Engenharia da Computação pela UFRN</strong>, com formação técnica em Mecatrônica
-    e foco em <strong>Desenvolvimento Web Fullstack</strong> e <strong>Engenharia de Software</strong>.
-  </p>
 
-  <p>
-    Tenho experiência na construção de interfaces modernas com <strong>React e Next.js</strong> e no desenvolvimento
-    de back-ends robustos utilizando tanto <strong>Python (Flask)</strong> quanto <strong>Java (Spring Boot)</strong>.
-    Atuo desde a modelagem de bancos de dados até a criação de <strong>APIs RESTful</strong> seguras e escaláveis.
-  </p>
+        <section id="about" class="section">
 
-  <p>
-    Busco atuar como <strong>Desenvolvedora Web</strong>, aplicando boas práticas de código,
-    arquitetura de software e novas tecnologias para resolver problemas reais.
-  </p>
-</section>
+            <div class="section-heading">
+                <span>01</span>
+                <h2 data-i18n="aboutTitle">About</h2>
+            </div>
 
-<section id="tecnologias">
-                <h2>Tecnologias</h2>
-                <div class="tech-grid">
-                    
-                    <div class="tech-category">
-                        <h3>Front-end</h3>
-                        <div class="tech-list">
-                            <span class="tech-item"><i class="fab fa-react"></i> React</span>
-                            <span class="tech-item"><i class="fas fa-layer-group"></i> Next.js</span>
-                            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="tech-item"><i class="fas fa-chart-line"></i> Streamlit</span>
-                            <span class="tech-item"><i class="fab fa-html5"></i> HTML/CSS</span>
-                        </div>
-                    </div>
+            <div class="about-content">
 
-                    <div class="tech-category">
-                        <h3>Back-end & Dados</h3>
-                        <div class="tech-list">
-                            <span class="tech-item"><i class="fab fa-python"></i> Python</span>
-                            <span class="tech-item"><i class="fas fa-flask"></i> Flask</span>
-                            <span class="tech-item"><i class="fas fa-database"></i> MariaDB (SQL)</span>
-                            <span class="tech-item"><i class="fas fa-table"></i> Pandas</span>
-                            <span class="tech-item"><i class="fas fa-brain"></i> Deep Learning</span>
-                            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
-                            <span class="tech-item"><i class="fas fa-leaf"></i> Spring Boot</span>
-                        </div>
-                    </div>
+                <p data-i18n="about1">
+                    I'm a Computer Engineering student at UFRN with a technical
+                    background in Mechatronics and hands-on experience in
+                    full-stack software development.
+                </p>
 
-                    <div class="tech-category">
-                        <h3>Ferramentas</h3>
-                        <div class="tech-list">
-                            <span class="tech-item"><i class="fab fa-git-alt"></i> Git / GitHub</span>
-                            <span class="tech-item"><i class="fab fa-docker"></i> Docker</span>
-                            <span class="tech-item"><i class="fab fa-figma"></i> Figma</span>
-                            <span class="tech-item"><i class="fab fa-linux"></i> Linux</span>
-                            <span class="tech-item"><i class="fas fa-code"></i> VS Code</span>
-                        </div>
+                <p data-i18n="about2">
+                    My professional and academic experience spans software
+                    engineering, artificial intelligence, machine learning,
+                    graph algorithms, robotics and digital signal processing.
+                </p>
+
+                <p data-i18n="about3">
+                    I enjoy turning complex problems into practical solutions
+                    and exploring how software and intelligent systems can
+                    solve real-world problems.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="experience" class="section">
+
+            <div class="section-heading">
+                <span>02</span>
+                <h2 data-i18n="experienceTitle">Experience</h2>
+            </div>
+
+            <article class="experience-item">
+
+                <div class="experience-meta">
+                    <span>2026 — Present</span>
+                </div>
+
+                <div class="experience-content">
+
+                    <h3 data-i18n="experienceSoftwareTitle">
+                        Software Development Scholarship
+                    </h3>
+
+                    <p class="experience-place" data-i18n="experienceSoftwarePlace">
+                        UFRN / PROPESQ · In collaboration with JFRN
+                    </p>
+
+                    <p data-i18n="experienceSoftware1">
+                        Develop and maintain institutional full-stack applications
+                        using Angular, TypeScript, Java and Spring Boot within an
+                        agile Scrum team.
+                    </p>
+
+                    <p data-i18n="experienceSoftware2">
+                        I also contribute to AI-powered solutions involving RAG,
+                        hybrid retrieval, vector search, LLMs, audio transcription
+                        and automated document analysis.
+                    </p>
+
+                    <div class="tags">
+                        <span>Angular</span>
+                        <span>TypeScript</span>
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Python</span>
+                        <span>RAG</span>
+                        <span>LLMs</span>
                     </div>
 
                 </div>
-            </section>
-            
-            <section id="projetos">
-                <h2>Projetos</h2>
-                
-                <article class="project-card">
-                    <div class="card-header">
-                        <h3>Mandaladaka</h3>
-                        <div class="tech-stack">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">MariaDB</span>
-                            <span class="tag">Metodologias Ágeis</span>
-                        </div>
-                    </div>
-                    <p>Sistema completo de gestão de restaurantes desenvolvido com ciclos ágeis. Front-end reativo e integração com APIs REST para controle de pedidos e mesas.</p>
-                    <div class="card-footer">
-                        <a href="https://github.com/sgnsilv/Mandaladaka" target="_blank"><i class="fas fa-code"></i> Ver Código</a>
-                    </div>
-                </article>
 
-                <article class="project-card">
-                    <div class="card-header">
-                        <h3>Morada Digital</h3>
-                        <div class="tech-stack">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">UX/UI</span>
-                        </div>
-                    </div>
-                    <p>Aplicação web para organização de condomínios. Focado em componentização reutilizável e experiência do usuário.</p>
-                    <div class="card-footer">
-                        <a href="https://sitecta-18bf9.web.app/login" target="_blank"><i class="fas fa-globe"></i> Visitar Site</a>
-                        <a href="https://github.com/sgnsilv/morada-digital-app" target="_blank"><i class="fas fa-code"></i> Ver Código</a>
-                    </div>
-                </article>
+            </article>
 
-                <article class="project-card">
-                    <div class="card-header">
-                        <h3>MandalaClass</h3>
-                        <div class="tech-stack">
-                            <span class="tag">Java 17</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">API REST</span>
-                            <span class="tag">JWT</span>
-                        </div>
-                    </div>
-                    <p>API RESTful robusta para gestão escolar desenvolvida com <strong>Spring Boot 3</strong>. Implementa segurança com Spring Security (JWT), persistência de dados com JPA/Hibernate e segue boas práticas de arquitetura em camadas.</p>
-                    <div class="card-footer">
-                        <a href="https://github.com/sgnsilv/MandalaClass" target="_blank"><i class="fas fa-code"></i> Ver Código</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="card-header">
-                        <h3>Mapa Gastronômico</h3>
-                        <div class="tech-stack">
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Pandas</span>
-                        </div>
-                    </div>
-                    <p>Aplicação interativa que mapeia restaurantes dos festivais <em>Sweet Coffee Week</em> e <em>SigaBlend</em> em Natal/RN, com filtros e geolocalização.</p>
-                    <div class="card-footer">
-                        <a href="https://github.com/sgnsilv/festival_map" target="_blank"><i class="fas fa-code"></i> Ver Código</a>
-                    </div>
-                </article>
 
-                <article class="project-card">
-                    <div class="card-header">
-                        <h3>Pesquisa em Bioinformática (IC)</h3>
-                        <div class="tech-stack">
-                            <span class="tag">Python</span>
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Pesquisa</span>
-                        </div>
-                    </div>
-                    <p>Desenvolvimento de modelos de Aprendizagem Profunda para classificação genômica de variantes do vírus SARS-CoV-2. Foco em processamento de dados biológicos.</p>
-                    </article>
+            <article class="experience-item">
 
-            </section>
-
-            <section id="connect" class="connect-section">
-                <h2>Conectar</h2>
-                <div class="link-list">
-                    <a href="https://linkedin.com/in/saransilv" target="_blank" class="link-item">
-                        <span><i class="fab fa-linkedin"></i> LinkedIn</span>
-                        <i class="fas fa-arrow-up-right-from-square arrow"></i>
-                    </a>
-                    <a href="https://github.com/sgnsilv" target="_blank" class="link-item">
-                        <span><i class="fab fa-github"></i> GitHub</span>
-                        <i class="fas fa-arrow-up-right-from-square arrow"></i>
-                    </a>
-                    <a href="mailto:sara.silva.114@ufrn.edu.br" class="link-item">
-                        <span><i class="fas fa-envelope"></i> Email</span>
-                        <i class="fas fa-arrow-right arrow"></i>
-                    </a>
+                <div class="experience-meta">
+                    <span>2023 — 2024</span>
                 </div>
-                
-                <div class="footer-actions">
-                    <div class="status">
-                        <span class="dot"></span> Disponível para trabalho
+
+                <div class="experience-content">
+
+                    <h3 data-i18n="researchTitle">
+                        Undergraduate Research · Bioinformatics
+                    </h3>
+
+                    <p class="experience-place">
+                        UFRN · InovAi
+                    </p>
+
+                    <p data-i18n="researchDescription">
+                        Conducted undergraduate research on the application
+                        of deep learning techniques to genomic classification
+                        of SARS-CoV-2 variants, developing experience with
+                        Python, data processing and machine learning.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Deep Learning</span>
+                        <span>Data Processing</span>
                     </div>
-                    <a href="curriculo.pdf" download class="btn-download">
-                        Baixar Currículo <i class="fas fa-download"></i>
-                    </a>
+
                 </div>
-            </section>
-        </main>
 
-        <footer>
-            <p>Desenvolvido por Sara Gabrielly © 2025</p>
-        </footer>
-    </div>
+            </article>
 
-    <script src="script.js"></script>
+        </section>
+
+
+        <section id="skills" class="section">
+
+            <div class="section-heading">
+                <span>03</span>
+                <h2 data-i18n="skillsTitle">Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-group">
+                    <h3 data-i18n="softwareDevelopment">
+                        Software Development
+                    </h3>
+
+                    <div class="skill-list">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Angular</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>React</span>
+                    </div>
+                </article>
+
+
+                <article class="skill-group">
+                    <h3>AI & Data</h3>
+
+                    <div class="skill-list">
+                        <span>RAG</span>
+                        <span>LLMs</span>
+                        <span>Machine Learning</span>
+                        <span>NLP</span>
+                        <span>Embeddings</span>
+                        <span>Vector Search</span>
+                    </div>
+                </article>
+
+
+                <article class="skill-group">
+                    <h3>Infrastructure</h3>
+
+                    <div class="skill-list">
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>Docker</span>
+                        <span>RabbitMQ</span>
+                        <span>Git</span>
+                        <span>GitLab</span>
+                    </div>
+                </article>
+
+
+                <article class="skill-group">
+                    <h3 data-i18n="engineering">
+                        Engineering
+                    </h3>
+
+                    <div class="skill-list">
+                        <span>Algorithms</span>
+                        <span>Data Structures</span>
+                        <span>Graphs</span>
+                        <span>IoT</span>
+                        <span>Embedded Systems</span>
+                        <span>Digital Signal Processing</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <span>04</span>
+                <h2 data-i18n="projectsTitle">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card featured-project">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-heading">
+
+                            <h3>Morada Digital</h3>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://sitecta-18bf9.web.app/login"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Open Morada Digital"
+                                >
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/Sgnsilv/morada-digital-app"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Morada Digital source code"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <p class="project-subtitle" data-i18n="moradaSubtitle">
+                            Condominium Management Platform
+                        </p>
+
+                        <p data-i18n="moradaDescription">
+                            Independently developed a web platform for condominium
+                            management featuring authentication, role-based access,
+                            common-area reservations, announcements, document
+                            management, lost & found and visitor management.
+                        </p>
+
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Firestore</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-heading">
+
+                            <h3>RideSmart</h3>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/Sgnsilv/RideSmart"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <p class="project-subtitle" data-i18n="rideSmartSubtitle">
+                            Urban Route Optimization with Graphs
+                        </p>
+
+                        <p data-i18n="rideSmartDescription">
+                            Urban mobility optimization project using real
+                            road-network data from Natal, Brazil. Pedestrian
+                            and vehicle networks are modeled as graphs to
+                            evaluate pickup strategies under different
+                            traffic conditions.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Graphs</span>
+                            <span>OSMnx</span>
+                            <span>NetworkX</span>
+                            <span>A*</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-heading">
+
+                            <h3>ThesisMiner</h3>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/gabriel26077/ThesisMiner"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <p class="project-subtitle" data-i18n="thesisSubtitle">
+                            Academic Text Mining
+                        </p>
+
+                        <p data-i18n="thesisDescription">
+                            Text-mining pipeline developed to analyze
+                            technological trends in Computer Engineering
+                            undergraduate theses from UFRN using NLP,
+                            TF-IDF and NMF.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>TF-IDF</span>
+                            <span>NMF</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-heading">
+
+                            <h3>Mandaladaka</h3>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/Sgnsilv/Mandaladaka"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <p class="project-subtitle" data-i18n="mandaladakaSubtitle">
+                            Restaurant Management System
+                        </p>
+
+                        <p data-i18n="mandaladakaDescription">
+                            Full-stack restaurant management application
+                            developed as part of a team, supporting table,
+                            order and payment management through an integrated
+                            web interface, REST API and relational database.
+                        </p>
+
+                        <div class="tags">
+                            <span>Next.js</span>
+                            <span>Flask</span>
+                            <span>MariaDB</span>
+                            <span>REST API</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="education" class="section">
+
+            <div class="section-heading">
+                <span>05</span>
+                <h2 data-i18n="educationTitle">Education</h2>
+            </div>
+
+            <div class="education-grid">
+
+                <article class="education-item">
+
+                    <span class="education-period">
+                        2023 — 2027
+                    </span>
+
+                    <h3 data-i18n="computerEngineering">
+                        Computer Engineering
+                    </h3>
+
+                    <p>
+                        Federal University of Rio Grande do Norte · UFRN
+                    </p>
+
+                </article>
+
+
+                <article class="education-item">
+
+                    <span class="education-period">
+                        2019 — 2022
+                    </span>
+
+                    <h3 data-i18n="mechatronics">
+                        Technical Degree in Mechatronics
+                    </h3>
+
+                    <p>
+                        Federal Institute of Rio Grande do Norte · IFRN
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="writing" class="section">
+
+            <div class="section-heading">
+                <span>06</span>
+                <h2 data-i18n="writingTitle">Writing</h2>
+            </div>
+
+            <div class="writing-placeholder">
+
+                <p class="eyebrow" data-i18n="comingSoon">
+                    Coming soon
+                </p>
+
+                <h3 data-i18n="writingHeading">
+                    Technical notes, experiments and things I learn while building.
+                </h3>
+
+                <p data-i18n="writingDescription">
+                    I'm preparing articles about algorithms, software
+                    engineering, artificial intelligence and computer
+                    engineering projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+                <span>07</span>
+                <h2 data-i18n="contactTitle">Let's connect</h2>
+            </div>
+
+            <div class="contact-content">
+
+                <div>
+
+                    <h3 data-i18n="contactHeading">
+                        Interested in software, AI or an engineering problem?
+                    </h3>
+
+                    <p data-i18n="contactDescription">
+                        Feel free to reach out.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a
+                        href="mailto:sara.silva.114@ufrn.edu.br"
+                        class="contact-link"
+                    >
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </span>
+
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/saransilv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link"
+                    >
+                        <span>
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </span>
+
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/Sgnsilv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link"
+                    >
+                        <span>
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-actions">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    <span data-i18n="availability">
+                        Open to opportunities
+                    </span>
+                </div>
+
+                <a
+                    href="curriculo.pdf"
+                    target="_blank"
+                    class="btn btn-secondary"
+                >
+                    <span data-i18n="resume">Resume</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p data-i18n="footer">
+            Designed & built by Sara Silva.
+        </p>
+
+        <a href="#home">
+            <span data-i18n="backToTop">Back to top</span>
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
